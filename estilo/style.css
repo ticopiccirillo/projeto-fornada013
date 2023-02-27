@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300;1,600;1,900&display=swap');
+
+
+:root {
+    --marrom-forte: #573100;
+    --laranja:#F28705;
+    --background:#E6D7C2;
+    --cinza: #D7CFCC;
+} 
+
+:root {
+    --fonta-padrao:'Source Sans Pro', sans-serif;
+    --fonte-sec: Arial, Helvetica, sans-serif;
+}
+
+
+* body, ul {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonta-padrao);
+    background-color:var(--background);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: var(--fonte-sec);
+}
+
+a:hover {
+    background-color: aqua;
+}
+
+#logo {
+    width: auto;
+    height: 80px;
+}
+
+#header {
+    display: flex;
+    box-sizing: border-box;
+    height: 80px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgrey;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+
+#menu a {
+    display: block;
+    padding: 10px;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width:600px)
+{
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+       /* display: block;*/
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background-color: lightgrey;
+        height:25vh;
+        z-index: 1000;
+        
+    }
+
+    #nav.active #menu {
+        display: flex;
+    }
+    
+}
+
+
