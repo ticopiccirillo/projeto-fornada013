@@ -11,7 +11,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
 } 
 
 :root {
-    --fonta-padrao:'Source Sans Pro', sans-serif;
+    --fonte-padrao:'Source Sans Pro', sans-serif;
     --fonte-sec: Arial, Helvetica, sans-serif;
 }
 
@@ -19,7 +19,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
 * body, ul {
     margin: 0px;
     padding: 0px;
-    font-family: var(--fonta-padrao);
+    font-family: var(--fonte-padrao);
     background-color:var(--background);
 }
 
@@ -30,7 +30,8 @@ a {
 }
 
 a:hover {
-    background-color: aqua;
+    background-color: #F28705;
+    border-radius: 10px;
 }
 
 #logo {
@@ -41,7 +42,9 @@ a:hover {
 #header {
     display: flex;
     box-sizing: border-box;
+    max-width: 900px;
     height: 80px;
+    margin: 0 auto;
     padding: 10px;
     align-items: center;
     justify-content: space-between;
@@ -51,7 +54,7 @@ a:hover {
 #menu {
     display: flex;
     list-style: none;
-    gap: 1em;
+    gap: 2em;
 }
 
 #menu a {
@@ -63,29 +66,80 @@ a:hover {
     display: none;
 }
 
-@media (max-width:600px)
+@media (max-width: 600px)
 {
-    #btn-mobile {
+     #menu {
+        /*display: none;*/
         display: block;
-    }
-
-    #menu {
-        display: none;
-       /* display: block;*/
         position: absolute;
+        text-align: center;
         width: 100%;
-        top: 70px;
+        height: 0px;
+        top: 80px;
         right: 0;
         background-color: lightgrey;
-        height:25vh;
+        transition: .6s;
         z-index: 1000;
-        
+        visibility: hidden;
+        overflow-y: hidden;
     }
 
     #nav.active #menu {
+        /*display: block;*/
+        text-align: center;
+        height:25vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        border-radius: none;
+        margin: auto;
+        border-bottom: 1px solid rgba(87, 49, 0, 0.384);
+    }
+
+    #btn-mobile {
         display: flex;
+        padding: 1em;
+        font-size: 1em;
+        border: none;
+        cursor: pointer;
+        gap: 5px;
+    }
+
+    #hamburger {
+        border-top: 2.5px solid;
+        width: 20px;
+    }
+
+    #hamburger::after, #hamburger::before {
+        content: '';
+        width: 20px;
+        height: 2.5px;
+        background-color: currentColor;
+        display: block;
+        margin-top: 5px;
+        transition: .7s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top: transparent;
     }
     
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+        width: 25px;
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        width: 25px;
+        top: -7px;
+    }
+
+   
+
 }
 
 
