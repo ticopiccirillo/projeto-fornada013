@@ -88,7 +88,6 @@ a:hover {
 
 #container-main {
     display: block;
-  /*  max-width: 900px;*/
     margin: 0 auto;
     text-align: center;
     background-color: #e8e2d3;
@@ -141,7 +140,7 @@ a:hover {
 
 
     #nav.active #menu {
-        /*display: block;*/
+      
         text-align: center;
         height:27vh;
         visibility: visible;
@@ -195,10 +194,21 @@ a:hover {
         transform: rotate(-135deg);
         width: 30px;
         top: -7px;
+        
     }
 
-   
-
 }
+
+  /*Estilização do mobile*/
+
+@media (max-width: 599px) {
+    #image-1 {
+        background-image: url('../fotos/imagem-1.jpg');
+        height: 500px;
+        width: 500px;
+    }
+}
+
+
 
 
