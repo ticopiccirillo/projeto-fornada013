@@ -19,7 +19,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         margin: 0px;
         padding: 0px;
         font-family: var(--fonte-padrao);
-        background-color:white;
+       
     }
 
 /*Início do header - tentando alguma coisa parecido com mobile first*/
@@ -85,7 +85,9 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     @media (max-width: 768px) {
 
     #logo {
-        margin-left: 44%;
+        position: relative;
+        left: 40%;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.519);
     }
 
      #menu {
@@ -187,6 +189,8 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
 
     #container-main {
         display: block;
+        height: 100%;
+        padding: 8px;
         margin: 0 auto;
         text-align: center;
         background-color: #e8e2d3;
@@ -195,9 +199,9 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     #conatiner-main, h1 {
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 600;
-        font-size: 3em;
+        font-size: 2.5em;
         background-color: #e8e2d3;
-        margin-top: 10px;
+        margin-top: 40px;
         padding: 20px;
     }
 
@@ -256,8 +260,63 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.533);
         border-radius: 8px;
     }
-}
 
+    #dicas {
+        background-image: url('/fotos/paes.jpg');
+        background-size: cover;
+        
+        color: white;
+        font-size: large;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.612);
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        color: #ffffff;
+        background-color: #ed890782;
+        padding: 20px 0;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.612);
+    }
+
+    #dicas > p {
+        background-color: rgba(0, 0, 0, 0.433);
+        margin: 0%;
+        padding: 4%;
+    }
+
+    footer {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        color: white;
+        margin: 0 auto;
+        padding: 3%;
+    }
+
+    #comprar > a {
+        display: block;
+        width: 30%;
+        margin: auto;
+        position: relative;
+        left: 3%;
+        text-decoration: none;
+        margin: auto;
+        margin-bottom: 2%;
+        padding: 3%;
+        background-color: red;
+        color: white;
+        font-weight:  bold;
+        font-size: 1.5em;
+        border-radius: 25px;
+    
+    }
+
+    #comprar > a:hover {
+        transform: scale(1.1);
+        background-position: -60px;
+    }
+
+}
 /* final do main*/
 
 
