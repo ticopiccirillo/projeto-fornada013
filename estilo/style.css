@@ -40,16 +40,15 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
 
     #logo {
         width: auto;
-        height: 90px;
+        height: 70px;
         border-radius: 50%;
-        margin: auto 0 ;
     }
 
     #header {
         display: flex;
         box-sizing: border-box;
         width: 100%;
-        height: 110px;
+        height: 90px;
         margin: auto;
         padding: 10px;
         align-items: center;
@@ -57,6 +56,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         background-color: #f28705;
         position: sticky;
         top: 0;
+        z-index: 10;
     }
 
     #menu {
@@ -86,7 +86,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
 
     #logo {
         position: relative;
-        left: 40%;
+        left: 45%;
         box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.519);
     }
 
@@ -97,7 +97,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         text-align: center;
         width: 100%;
         height: 0px;
-        top: 110px;
+        top: 90px;
         right: 0;
         color: #e8e2d3;
         transition: .6s;
@@ -108,7 +108,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
 
     #nav.active #menu {
         text-align: center;
-        height:27vh;
+        height:auto;
         visibility: visible;
         overflow-y: auto;
         color: #e8e2d3;
@@ -120,12 +120,13 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         border-radius: none;
         margin: auto;
         border-bottom: 2px solid rgba(87, 49, 0, 0.384);
+        
     }
 
     #btn-mobile {
         display: flex;
         padding: .6em;
-        font-size: 2em;
+        font-size: 1.5em;
         border: none;
         cursor: pointer;
         background-color: #b6640052;
@@ -173,6 +174,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         height: 520px;
         width: auto;
         padding-top: 20%;
+        
     }
 
     #imagem-main p{
@@ -209,7 +211,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         font-family: Arial, Helvetica, sans-serif;
         font-weight: normal;
         font-size: 1em;
-        background-color: #e8e2d3);
+        background-color: #e8e2d3;
     }
 
     #video-principal {
@@ -264,7 +266,6 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     #dicas {
         background-image: url('/fotos/paes.jpg');
         background-size: cover;
-        
         color: white;
         font-size: large;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.612);
@@ -284,20 +285,10 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         padding: 4%;
     }
 
-    footer {
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: black;
-        color: white;
-        margin: 0 auto;
-        padding: 3%;
-    }
-
     #comprar > a {
         display: block;
         width: 30%;
         margin: auto;
-        position: relative;
         left: 3%;
         text-decoration: none;
         margin: auto;
@@ -308,7 +299,6 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         font-weight:  bold;
         font-size: 1.5em;
         border-radius: 25px;
-    
     }
 
     #comprar > a:hover {
@@ -316,8 +306,71 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         background-position: -60px;
     }
 
+    #footer {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        color: white;
+        margin: 0 auto;
+        padding: 3%;
+        display: block;
+        
+    }
+
+    .backtop {
+        /*background-color: #e8e2d3;*/
+    }
+
+      img.footer-img{
+        position: relative;
+        top: 51px;
+    }
+    
+    .footer-img  {
+        display: block;
+        filter: invert(1);
+        border-radius: 50%;
+        width: 20%;
+        margin: auto;
+    }
+
+    .contatos h3 {
+        background-color: black;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin: auto;
+        display: block;
+    }
+    
+    .contatos p {
+        background-color: black;
+    }
+
+    .footer-conts div {
+        display: block;
+        width: 100%;
+        margin: auto;
+        
+    }
+
+    div.contatos img{
+        filter: invert(1);
+        width: 10%;
+        height: 100%;
+    }
+
+    div.contatos {
+        display: block;
+        margin-top: 30px;
+        
+    }
+
+    span {
+        font-size: .8em;
+    }
+   
 }
-/* final do main*/
+
 
 
 
