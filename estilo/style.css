@@ -123,6 +123,10 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         
     }
 
+    #menu a:hover {
+        text-decoration: underline;
+    }
+
     #btn-mobile {
         display: flex;
         padding: .6em;
@@ -255,28 +259,9 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         border-radius: 8px;
     }
 
-    div.button-carrossel {
-        margin: auto;
-        padding: 3%;
-    }
-
-    .button {
-        border-radius: 50%;
-        width: 10px;
-        height: 10px;
-        border: 2px solid white;
-        margin: 2%;
-        background-color: rgb(255, 239, 239);
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.533);
-        cursor: pointer;
-    }
-
-    .button.selection {
-        background-color: #2e1a00;
-    }    
-
+   
     #dicas {
-        background-image: url('/fotos/paes.jpg');
+        background-image: url('../fotos/paes.jpg');
         background-size: cover;
         color: white;
         font-size: large;
@@ -350,9 +335,10 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
 
     .contatos h3 {
         background-color: black;
+        color: white;
         font-weight: bold;
         font-size: 1.5em;
-        margin: auto;
+        margin-top: 50px;
         display: block;
     }
     
