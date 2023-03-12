@@ -1,9 +1,15 @@
+window.alert('Seja muito bem vindo!!')
+
 const btnMobile = document.getElementById('btn-mobile') ;
-
-function toggleMenu( ) {
-const nav = document.getElementById('nav') ;
-nav.classList.toggle('active')
-}
-
 btnMobile.addEventListener('click' ,toggleMenu) ;
 btnMobile.addEventListener('Touchstart', toggleMenu) ;
+
+function toggleMenu( event) 
+{
+    if(event.type === 'touchstart') eventpreventdefaul
+const nav = document.getElementById('nav') ;
+nav.classList.toggle('active' )
+
+}
+
+

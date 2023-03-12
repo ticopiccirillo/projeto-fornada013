@@ -174,7 +174,6 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         height: 520px;
         width: auto;
         padding-top: 20%;
-        
     }
 
     #imagem-main p{
@@ -205,6 +204,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         background-color: #e8e2d3;
         margin-top: 40px;
         padding: 20px;
+        width: auto;
     }
 
     #conatiner-main, p {
@@ -214,21 +214,13 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         background-color: #e8e2d3;
     }
 
-    #video-principal {
-        width: 90%;
-        height: 400px;
-        margin: auto;
-        background-color: #f2870576;
-        margin: auto;
-    }
-
     #imagem-1 {
         background-image: url('../fotos/pao-bonito.webp');
         background-position: center center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        height: 500px;
+        height: 380px;
         width: auto;
     }
 
@@ -263,6 +255,26 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         border-radius: 8px;
     }
 
+    div.button-carrossel {
+        margin: auto;
+        padding: 3%;
+    }
+
+    .button {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        border: 2px solid white;
+        margin: 2%;
+        background-color: rgb(255, 239, 239);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.533);
+        cursor: pointer;
+    }
+
+    .button.selection {
+        background-color: #2e1a00;
+    }    
+
     #dicas {
         background-image: url('/fotos/paes.jpg');
         background-size: cover;
@@ -272,15 +284,15 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         letter-spacing: 1px;
     }
 
-    h3 {
+    #dicas h3{
         color: #ffffff;
-        background-color: #ed890782;
+        background-color: #57310086;
         padding: 20px 0;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.612);
     }
 
     #dicas > p {
-        background-color: rgba(0, 0, 0, 0.433);
+        background-color: rgba(0, 0, 0, 0.468);
         margin: 0%;
         padding: 4%;
     }
@@ -306,19 +318,21 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         background-position: -60px;
     }
 
+    /* Estilização do footer*/
+
     #footer {
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         background-color: black;
         color: white;
-        margin: 0 auto;
+        margin: auto;
         padding: 3%;
         display: block;
         
     }
 
     .backtop {
-        /*background-color: #e8e2d3;*/
+        background-color:  #e8e2d3;
     }
 
       img.footer-img{
@@ -369,6 +383,14 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         font-size: .8em;
     }
    
+}
+
+@media (max-width: 548px) {
+
+    iframe {
+        width: 95%;
+        margin: auto;
+    }
 }
 
 
