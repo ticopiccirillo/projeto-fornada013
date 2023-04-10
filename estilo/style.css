@@ -16,14 +16,18 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     }
 
     * body, html {
+        width: auto;
         margin: 0px;
         padding: 0px;
-        font-family: var(--fonte-padrao);
-       
+        font-family: var(--fonte-padrao);    
     }
 
 /*Início do header - tentando alguma coisa parecido com mobile first*/
 
+    
+/*Final do header*/
+
+    @media (max-width: 768px) {
     a {
         color: black;
         text-decoration: none;
@@ -79,10 +83,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     #btn-mobile {
         display: none;
     }
-
-/*Final do header*/
-
-    @media (max-width: 768px) {
+    
 
     #logo {
         position: relative;
@@ -120,7 +121,6 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         border-radius: none;
         margin: auto;
         border-bottom: 2px solid rgba(87, 49, 0, 0.384);
-        
     }
 
     #menu a:hover {
@@ -259,7 +259,6 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         border-radius: 8px;
     }
 
-   
     #dicas {
         background-image: url('../fotos/paes.jpg');
         background-size: cover;
@@ -313,7 +312,6 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         margin: auto;
         padding: 3%;
         display: block;
-        
     }
 
     .backtop {
@@ -350,7 +348,6 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         display: block;
         width: 100%;
         margin: auto;
-        
     }
 
     div.contatos img{
@@ -362,7 +359,6 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     div.contatos {
         display: block;
         margin-top: 30px;
-        
     }
 
     span {
@@ -376,6 +372,52 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     iframe {
         width: 95%;
         margin: auto;
+    }
+}
+
+@media (min-width: 769px) {
+
+    #header {
+        display: flex;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 90px;
+        margin: auto;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f28705;
+        position: sticky;
+       /* top: 0;
+        z-index: 10;*/
+    }
+
+    #menu {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        list-style: none;
+        gap: 2em;
+        margin: auto;
+        margin-right: auto;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 0;
+    }
+
+    #menu a {
+        display: block;
+        padding: 10px;
+        list-style: none;
+    }
+
+    #logo {
+        width: auto;
+        height: 70px;
+        border-radius: 50%;
+    }
+    #btn-mobile {
+        display: none;
     }
 }
 
