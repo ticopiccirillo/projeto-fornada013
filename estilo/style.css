@@ -16,12 +16,285 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     }
 
     * body, html {
-        width: auto;
+        width: 100vw;
         margin: 0px;
         padding: 0px;
         font-family: var(--fonte-padrao);    
     }
 
+    /*header desktop*/
+
+    #header {
+        display: flex;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 90px;
+        margin: auto;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f28705;
+        position: sticky;
+       /* top: 0;
+        z-index: 10;*/
+    }
+
+    #menu {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        list-style: none;
+        gap: 2em;
+        margin: auto;
+        margin-right: auto;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 0;
+    }
+
+    #menu a {
+        display: block;
+        padding: 10px;
+        list-style: none;
+        text-decoration: none;
+        color: #2e1a00 ;
+    }
+
+    #logo {
+        width: auto;
+        height: 70px;
+        border-radius: 50%;
+    }
+    #btn-mobile {
+        display: none;
+    }
+
+    #imagem-main{
+        background-image: url('../fotos/pao-mesa.jpg');
+        background-position: center center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-attachment: local;
+        height: 520px;
+        width: 100vw;
+        padding-top: 20%;
+    }
+
+    #imagem-main p{
+        color: #b6640052;
+        text-shadow: 1px 1px 1px black;
+        background-color: rgba(255, 255, 255, 0.433);
+        font-size: 2em;
+        font-family: cursive;
+        font-weight: bold;
+        align-items: center;
+        margin: auto;
+        padding: 5% 4%;
+    }
+
+    #container-main {
+        display: block;
+        height: 100%;
+        width: 100vw;
+        padding: 8px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #e8e2d3;
+    }
+
+    #conatiner-main, h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 2.5em;
+        background-color: #e8e2d3;
+        margin-top: 40px;
+        padding: 20px;
+        width: auto;
+    }
+
+    #conatiner-main, p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 1em;
+        background-color: #e8e2d3;
+    }
+
+    #video-info {
+        display: flex;
+    }
+    iframe {
+        width: 200vw;
+        height: 560px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+        display: flex;
+    }
+
+    #text-01 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200vw;
+        height: 380px;
+    }
+
+    #imagem-1 {
+        background-image: url('../fotos/03.webp');
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 560px;
+        width: auto;
+    }
+
+    p {
+        padding: 2% 0;
+        margin: 2% 5%;
+    }
+
+    .fotos section {
+        width: auto;
+        display: block;
+    }
+
+   h1, h2 {
+        font-size: 3em;
+        color: #2e1a00;
+        background-color: #a35c0071;
+        padding: 20px 0;
+    }
+
+    #cards {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .cards-single img {
+        width: 50%;
+        height: 300px;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.533);
+        border-radius: 8px;
+    }
+
+    #dicas {
+        background-image: url('');
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: white;
+        font-size: large;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.612);
+        letter-spacing: 1px;
+    }
+
+    #dicas h3{
+        color: #ffffff;
+        background-color: #57310086;
+        padding: 20px 0;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.612);
+    }
+
+    #dicas > p {
+        color: black;
+        width: 800px;
+        margin: auto;
+    }
+
+    .icones {
+        width: 50px;
+        height: 50px;
+        align-content: center;
+    }
+
+    #comprar > a {
+        display: block;
+        width: 30%;
+        margin: auto;
+        left: 3%;
+        text-decoration: none;
+        margin: auto;
+        margin-bottom: 2%;
+        padding: 3%;
+        background-color: red;
+        color: white;
+        font-weight:  bold;
+        font-size: 1.5em;
+        border-radius: 25px;
+    }
+
+    #comprar > a:hover {
+        transform: scale(1.1);
+        background-position: -60px;
+    }
+
+    /* Estilização do footer*/
+
+    #footer {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        color: white;
+        margin: auto;
+        padding: 3%;
+        display: block;
+    }
+
+    .backtop {
+        background-color:  #e8e2d3;
+    }
+
+      img.footer-img{
+        position: relative;
+        top: 51px;
+    }
+    
+    .footer-img  {
+        display: block;
+        filter: invert(1);
+        border-radius: 50%;
+        width: 20%;
+        margin: auto;
+    }
+
+    .contatos h3 {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-top: 50px;
+        display: block;
+    }
+    
+    .contatos p {
+        background-color: black;
+    }
+
+    .footer-conts div {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    div.contatos img{
+        filter: invert(1);
+        width: 10%;
+        height: 100%;
+    }
+
+    div.contatos {
+        display: block;
+        margin-top: 30px;
+    }
+
+    span {
+        font-size: .8em;
+    }
+   
 /*Início do header - tentando alguma coisa parecido com mobile first*/
 
     
@@ -268,6 +541,14 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         letter-spacing: 1px;
     }
 
+    #text-01 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200vw;
+        height: 380px;
+    }
+
     #dicas h3{
         color: #ffffff;
         background-color: #57310086;
@@ -278,7 +559,11 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     #dicas > p {
         background-color: rgba(0, 0, 0, 0.468);
         margin: 0%;
+        width: auto;
         padding: 4%;
+        color: black;
+        text-shadow: 1px 1px 1px white;
+        font-weight: bold;
     }
 
     #comprar > a {
@@ -377,48 +662,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
 
 @media (min-width: 769px) {
 
-    #header {
-        display: flex;
-        box-sizing: border-box;
-        width: 100vw;
-        height: 90px;
-        margin: auto;
-        padding: 10px;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #f28705;
-        position: sticky;
-       /* top: 0;
-        z-index: 10;*/
-    }
-
-    #menu {
-        display: flex;
-        justify-content: space-evenly;
-        width: 100vw;
-        list-style: none;
-        gap: 2em;
-        margin: auto;
-        margin-right: auto;
-        font-size: 1.5em;
-        font-weight: bold;
-        padding: 0;
-    }
-
-    #menu a {
-        display: block;
-        padding: 10px;
-        list-style: none;
-    }
-
-    #logo {
-        width: auto;
-        height: 70px;
-        border-radius: 50%;
-    }
-    #btn-mobile {
-        display: none;
-    }
+    
 }
 
 
