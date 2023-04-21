@@ -35,8 +35,13 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         justify-content: space-between;
         background-color: #f28705;
         position: sticky;
-       /* top: 0;
-        z-index: 10;*/
+        top: 0;
+        z-index: 10;
+    }
+
+    #nav {
+        display: flex;
+        justify-content: space-between;
     }
 
     #menu {
@@ -44,7 +49,6 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         justify-content: space-evenly;
         width: 100vw;
         list-style: none;
-        gap: 2em;
         margin: auto;
         margin-right: auto;
         font-size: 1.5em;
@@ -57,13 +61,14 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         padding: 10px;
         list-style: none;
         text-decoration: none;
-        color: #2e1a00 ;
+        color: #573100;
     }
 
     #logo {
         width: auto;
         height: 70px;
         border-radius: 50%;
+        margin-left: 20px;
     }
     #btn-mobile {
         display: none;
@@ -122,8 +127,9 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     #video-info {
         display: flex;
     }
+
     iframe {
-        width: 200vw;
+        width: 80vw;
         height: 560px;
         margin-left: 20px;
         margin-right: 20px;
@@ -135,12 +141,12 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 200vw;
+        width: 60%;
         height: 380px;
     }
 
     #imagem-1 {
-        background-image: url('../fotos/03.webp');
+        background-image: url('../fotos/pao-bonito.webp');
         background-position: center center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -223,7 +229,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         background-color: red;
         color: white;
         font-weight:  bold;
-        font-size: 1.5em;
+        font-size: 2.5em;
         border-radius: 25px;
     }
 
@@ -244,55 +250,58 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         display: block;
     }
 
-    .backtop {
-        background-color:  #e8e2d3;
-    }
-
       img.footer-img{
         position: relative;
         top: 51px;
     }
     
     .footer-img  {
-        display: block;
+        display: flex;
         filter: invert(1);
         border-radius: 50%;
         width: 20%;
         margin: auto;
+        text-align: center;
     }
 
     .contatos h3 {
         background-color: black;
         color: white;
         font-weight: bold;
-        font-size: 1.5em;
+        font-size: 3em;
         margin-top: 50px;
         display: block;
     }
     
     .contatos p {
         background-color: black;
+        font-size: 2em;
     }
 
     .footer-conts div {
-        display: block;
+        display: flex;
         width: 100%;
         margin: auto;
+        text-align: center;
     }
 
     div.contatos img{
         filter: invert(1);
-        width: 10%;
-        height: 100%;
+        width: 5%;
+        height: 10%;
+        text-align: center;
     }
 
     div.contatos {
         display: block;
         margin-top: 30px;
+        text-align: center;
     }
 
     span {
-        font-size: .8em;
+        font-size: 1.5em;
+        padding: 5%;
+        margin-top: 2%;
     }
    
 /*Início do header - tentando alguma coisa parecido com mobile first*/
@@ -481,7 +490,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         background-color: #e8e2d3;
         margin-top: 40px;
         padding: 20px;
-        width: auto;
+        width: 100vw;
     }
 
     #conatiner-main, p {
@@ -491,6 +500,35 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         background-color: #e8e2d3;
     }
 
+    #video-info {
+        display: block;
+        width: 100vw;
+        
+    }
+
+    iframe {
+        width: 95%;
+        height: 560px;
+        margin: 2% 2%;
+        display: block;
+    }
+
+    p {
+        font-size: 1.5em;
+        padding: 2% 2%;
+        justify-content: center;
+        text-align: center;
+        width: 95vw;
+        margin: auto;
+    }
+
+    /*#text-01 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+    }*/
+
     #imagem-1 {
         background-image: url('../fotos/pao-bonito.webp');
         background-position: center center;
@@ -499,11 +537,6 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         background-attachment: fixed;
         height: 380px;
         width: auto;
-    }
-
-    p {
-        padding: 2% 0;
-        margin: 2% 5%;
     }
 
     .fotos section {
@@ -533,20 +566,12 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     }
 
     #dicas {
-        background-image: url('../fotos/paes.jpg');
+        background-image: url('');
         background-size: cover;
         color: white;
         font-size: large;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.612);
         letter-spacing: 1px;
-    }
-
-    #text-01 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 200vw;
-        height: 380px;
     }
 
     #dicas h3{
@@ -557,7 +582,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     }
 
     #dicas > p {
-        background-color: rgba(0, 0, 0, 0.468);
+        /*background-color: rgba(0, 0, 0, 0.468);*/
         margin: 0%;
         width: auto;
         padding: 4%;
@@ -575,7 +600,7 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
         margin: auto;
         margin-bottom: 2%;
         padding: 3%;
-        background-color: red;
+        background-color: rgb(255, 0, 0);
         color: white;
         font-weight:  bold;
         font-size: 1.5em;
@@ -592,15 +617,11 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     #footer {
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         color: white;
         margin: auto;
         padding: 3%;
         display: block;
-    }
-
-    .backtop {
-        background-color:  #e8e2d3;
     }
 
       img.footer-img{
@@ -617,33 +638,45 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     }
 
     .contatos h3 {
-        background-color: black;
+        background-color: rgb(5, 5, 5);
         color: white;
         font-weight: bold;
         font-size: 1.5em;
         margin-top: 50px;
-        display: block;
+        display: inline-block;
     }
     
     .contatos p {
-        background-color: black;
+        background-color: rgb(0, 0, 0);
+        display: block;
+        margin: auto;
+
     }
 
-    .footer-conts div {
+   /* .footer-conts div {
         display: block;
         width: 100%;
         margin: auto;
-    }
+        background-color: rgb(89, 255, 23);
+    }*/
 
     div.contatos img{
+        display: flex;
         filter: invert(1);
         width: 10%;
-        height: 100%;
+        height: 10%;
+        margin: auto;
+       margin-bottom: 20px;
+       
     }
 
     div.contatos {
         display: block;
         margin-top: 30px;
+        background-color: rgb(0, 0, 0);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     span {
@@ -660,10 +693,6 @@ fonte-padrao: @import url('https://fonts.googleapis.com/css2?family=Source+Sans+
     }
 }
 
-@media (min-width: 769px) {
-
-    
-}
 
 
 
